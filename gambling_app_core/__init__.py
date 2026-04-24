@@ -1,0 +1,71 @@
+"""
+gambling_app_core - Core module for the Gambling Simulation System.
+Contains shared configuration, exceptions, and entity models.
+"""
+
+from .config import AppConfig, APP_CONFIG, GameType, GAME_ODDS_CONFIG
+from .exceptions import (
+    GamblingAppException,
+    DatabaseException,
+    ConnectionException,
+    RepositoryException,
+    ValidationException,
+    StakeValidationException,
+    BetValidationException,
+    ProbabilityValidationException,
+    GamblerException,
+    SessionException,
+    StrategyException,
+    BettingEngineException,
+    OutcomeException,
+)
+from .entities import (
+    SessionStatus,
+    TransactionType,
+    BetOutcome,
+    OddType,
+    GamblerDTO,
+    SessionDTO,
+    BetDTO,
+    TransactionDTO,
+    StatisticsDTO,
+    SessionSummaryDTO,
+    Gambler,
+    Session,
+    Bet,
+    Transaction,
+)
+
+__all__ = [
+    "AppConfig",
+    "APP_CONFIG",
+    "GameType",
+    "GAME_ODDS_CONFIG",
+    "GamblingAppException",
+    "DatabaseException",
+    "ConnectionException",
+    "RepositoryException",
+    "ValidationException",
+    "StakeValidationException",
+    "BetValidationException",
+    "ProbabilityValidationException",
+    "GamblerException",
+    "SessionException",
+    "StrategyException",
+    "BettingEngineException",
+    "OutcomeException",
+    "SessionStatus",
+    "TransactionType",
+    "BetOutcome",
+    "OddType",
+    "GamblerDTO",
+    "SessionDTO",
+    "BetDTO",
+    "TransactionDTO",
+    "StatisticsDTO",
+    "SessionSummaryDTO",
+    "Gambler",
+    "Session",
+    "Bet",
+    "Transaction",
+]
